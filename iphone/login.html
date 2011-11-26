@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta id="viewport" name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<title>Forms</title>
+	<link rel="stylesheet" href="css/iphone.css" />
+	<script type="text/javascript">
+	function clickclear(thisfield, defaulttext) {
+	if (thisfield.value == defaulttext) {
+	thisfield.value = "";
+	}
+	}
+	function clickrecall(thisfield, defaulttext) {
+	if (thisfield.value == "") {
+	thisfield.value = defaulttext;
+	}
+	}
+	</script>
+</head>
+
+<body>
+<div id="header">
+		<h1>login</h1>
+		<a href="index.html" id="backButton" class="nav">Back</a>
+	</div>
+
+<h1></h1>
+
+<ul class="form">
+	<li><input type="text" name="username" value="username" id="username" onclick="clickclear(this, 'Text')" onblur="clickrecall(this,'Text')" /></li>
+	<li><input type="text" name="password" value="password" id="password" onclick="clickclear(this, 'Search')" onblur="clickrecall(this,'Search')" /></li>
+</ul>
+
+<p><a href="index.html" class="button white">login</a></p>
+
+
+</body>
+</html>
